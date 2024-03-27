@@ -1,18 +1,9 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
   font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  width: 100%;
 }
 
 @media (hover: hover) {
@@ -24,12 +15,12 @@ a,
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    place-items: baseline;
   }
 
   #app {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 0 2rem; */
   }
 }
