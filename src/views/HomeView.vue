@@ -1,5 +1,25 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AboutView from './AboutView.vue'
+import ExperienceView from './ExperienceView.vue'
+import AditionalView from './AditionalView.vue'
+import EducationView from './EducationView.vue'
+</script>
 
 <template>
-  <main></main>
+  <div class="container">
+    <AboutView />
+    <ExperienceView />
+    <AditionalView />
+    <EducationView />
+  </div>
 </template>
+
+<style scoped>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+</style>

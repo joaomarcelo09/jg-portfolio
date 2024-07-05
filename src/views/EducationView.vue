@@ -1,14 +1,13 @@
 <template>
   <div class="section">
     <div class="section-header">
-      <h2>Sobre Mim</h2>
+      <h2>Educação</h2>
     </div>
-    <div class="card">
-      <p>
-        Sou João Gomes, um desenvolvedor Full Stack com experiência no desenvolvimento e manutenção
-        de aplicações web. Possuo habilidades em Java, Spring Boot, Vue.js, Node.js e diversas
-        outras tecnologias. Comprometido com aprendizado contínuo e melhoria.
-      </p>
+    <div class="education-card">
+      <div class="education-content">
+        <h3>Estácio de Sá</h3>
+        <p>Bacharelado em Análise e Desenvolvimento de Software, 2023 - 2025</p>
+      </div>
     </div>
   </div>
 </template>
@@ -28,15 +27,21 @@
   margin-bottom: 1rem;
 }
 
-.card {
+.education-card {
   padding: 1rem;
-  background-color: #444444;
+  background-color: #555555;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
-p {
-  color: #ffffff;
+.education-content h3 {
+  color: #04aa6d;
+  margin-bottom: 0.5rem;
+}
+
+.education-content p {
+  margin: 0;
+  color: #e0e0e0;
 }
 
 h2 {

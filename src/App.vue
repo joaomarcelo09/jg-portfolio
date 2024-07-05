@@ -1,145 +1,115 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <div class="sidebar">
-    <TheWelcome />
+  <div class="app">
+    <div class="main-content">
+      <div class="header">
+        <div class="header-left">
+          <TheWelcome />
+        </div>
+        <div class="header-center">
+          <RouterLink to="/">Informações</RouterLink>
+          <RouterLink to="/projects">Projetos</RouterLink>
+        </div>
+        <div class="header-right"></div>
+      </div>
 
-    <div class="sidebar-links">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <div class="router-view">
+        <RouterView />
+      </div>
+      <Footer />
     </div>
-  </div>
-
-  <!-- Page content -->
-  <div class="content">
-    <RouterView />
   </div>
 </template>
 
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import TheWelcome from './components/TheWelcome.vue'
+import Footer from './components/FooterSocial.vue'
+</script>
+
 <style scoped>
-.sidebar {
+body {
   margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  font-family: Arial, sans-serif;
 }
 
-/* Sidebar links */
-
-.sidebar-links {
-  margin-top: 7rem;
-}
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-  border-radius: 10px 0px 0px 10px;
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Active/current link */
-.sidebar a.router-link-exact-active {
-  background-color: #04aa6d;
-  color: white;
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
 
-.sidebar a.router-link-exact-active:hover(.active) {
-  background-color: transparent;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar-links {
-    margin-top: 2rem;
-    border: black;
-  }
-  .sidebar a {
-    float: left;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-  }
-  div.content {
-    margin-left: 0;
-    max-height: 250px;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar-links {
-    margin-top: 2rem;
-    border: black;
-  }
-  .sidebar a {
-    float: left;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-  }
-  div.content {
-    margin-left: 0;
-    max-height: 250px;
-  }
-}
-
-nav {
+.header {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
+  background-color: #2d2d2d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.header-left {
+  flex: 1;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.header-right {
+  flex: 1;
 }
 
-nav a:first-of-type {
-  border: 0;
+.header a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    width: 100%;
-    /* padding-right: calc(var(--section-gap) / 2); */
-  }
+.header a:hover {
+  background-color: #555555;
+}
 
-  header nav {
-    text-align: left;
-    font-size: 1rem;
-  }
+.header a.router-link-exact-active {
+  background-color: #04aa6d;
+  color: #ffffff;
+}
+
+.router-view {
+  padding: 80px 20px 20px;
+  background-image: url('/src/components/icons/fundoport.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>

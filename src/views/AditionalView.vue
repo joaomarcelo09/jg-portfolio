@@ -1,13 +1,13 @@
 <template>
   <div class="section">
     <div class="section-header">
-      <h2>Sobre Mim</h2>
+      <h2>Contribuições Adicionais</h2>
     </div>
     <div class="card">
       <p>
-        Sou João Gomes, um desenvolvedor Full Stack com experiência no desenvolvimento e manutenção
-        de aplicações web. Possuo habilidades em Java, Spring Boot, Vue.js, Node.js e diversas
-        outras tecnologias. Comprometido com aprendizado contínuo e melhoria.
+        Trabalho ativamente em comunidades de desenvolvimento de código aberto, especialmente em
+        projetos que utilizam Java. Contribuo para expandir meu conhecimento e compartilhar boas
+        práticas com a comunidade global de desenvolvedores.
       </p>
     </div>
   </div>
