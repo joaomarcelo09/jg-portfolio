@@ -103,13 +103,4 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 }
-
-.footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 </style>
