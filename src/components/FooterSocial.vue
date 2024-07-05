@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-6">
           <h4>Contato</h4>
-          <a href="https://w.app/JoaoGomes" target="_blank" class="btn btn-primary">
+          <a href="mailto:jg0112360@gmail.com" target="_blank" class="btn btn-primary">
             <!-- <img src="./icons/wppicon.png" alt="WhatsApp" /> -->
             Converse diretamente comigo
           </a>
@@ -34,11 +34,6 @@ const socialLinks = [
     name: 'LinkedIn',
     icon: 'icons/githubicon.png',
     link: 'https://www.linkedin.com/in/joao-marcelo-a31b75206/'
-  },
-  {
-    name: 'Gmail',
-    icon: 'icons/githubicon.png',
-    link: 'mailto:jg0112360@gmail.com'
   }
 ]
 </script>

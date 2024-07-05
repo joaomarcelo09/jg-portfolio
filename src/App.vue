@@ -96,6 +96,7 @@ body {
 
 .router-view {
   padding: 80px 20px 20px;
+  margin-bottom: 30px;
   background-image: url('/src/components/icons/fundoport.jpg');
   background-size: cover;
   background-position: center;
