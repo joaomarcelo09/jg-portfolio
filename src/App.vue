@@ -9,7 +9,7 @@ import TheWelcome from './components/TheWelcome.vue'
       <TheWelcome />
     </div>
     <div class="header-center">
-      <RouterLink to="/">Sobre mim</RouterLink>
+      <RouterLink to="/">Informações</RouterLink>
       <RouterLink to="/projects">Projetos</RouterLink>
     </div>
     <div class="header-right"></div>
@@ -77,7 +77,10 @@ body {
 
 .content {
   padding: 80px 20px 20px;
-  background-color: #000000;
+  background-image: url('/src/components/icons/fundoport.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   box-sizing: border-box;
 }
