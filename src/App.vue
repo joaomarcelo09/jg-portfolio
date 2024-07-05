@@ -4,13 +4,15 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <div class="sidebar">
-    <TheWelcome />
-
-    <div class="sidebar-links">
+  <div class="header">
+    <div class="header-left">
+      <TheWelcome />
+    </div>
+    <div class="header-center">
       <RouterLink to="/">Sobre mim</RouterLink>
       <RouterLink to="/projects">Projetos</RouterLink>
     </div>
+    <div class="header-right"></div>
   </div>
 
   <div class="content">
@@ -20,80 +22,63 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <style scoped>
 body {
-  display: flex;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-.sidebar {
-  width: 250px;
+.header {
+  width: 100%;
   background-color: #2d2d2d;
-  height: 100vh;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.sidebar-links {
-  margin-top: 3rem;
-  width: 100%;
-  text-align: center;
+.header-right {
+  flex: 1;
 }
 
-.sidebar a {
-  display: block;
+.header a {
   color: #e0e0e0;
-  padding: 15px 20px;
-  margin: 10px 0;
   text-decoration: none;
-  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  border-radius: 5px;
   transition:
     background-color 0.3s,
     color 0.3s;
 }
 
-.sidebar a:hover {
+.header a:hover {
   background-color: #555555;
 }
 
-.sidebar a.router-link-exact-active {
+.header a.router-link-exact-active {
   background-color: #04aa6d;
   color: #ffffff;
 }
 
 .content {
-  margin-left: 250px;
-  padding: 20px;
-  flex-grow: 1;
+  padding: 80px 20px 20px;
   background-color: #000000;
   min-height: 100vh;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-    width: 100%;
-    text-align: center;
-  }
-  .content {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    float: none;
-  }
 }
 </style>
