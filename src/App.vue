@@ -1,29 +1,48 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <div class="header">
-    <div class="header-left">
-      <TheWelcome />
-    </div>
-    <div class="header-center">
-      <RouterLink to="/">Informações</RouterLink>
-      <RouterLink to="/projects">Projetos</RouterLink>
-    </div>
-    <div class="header-right"></div>
-  </div>
+  <div class="app">
+    <div class="main-content">
+      <div class="header">
+        <div class="header-left">
+          <TheWelcome />
+        </div>
+        <div class="header-center">
+          <RouterLink to="/">Informações</RouterLink>
+          <RouterLink to="/projects">Projetos</RouterLink>
+        </div>
+        <div class="header-right"></div>
+      </div>
 
-  <div class="content">
-    <RouterView />
+      <div class="router-view">
+        <RouterView />
+      </div>
+      <Footer />
+    </div>
   </div>
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import TheWelcome from './components/TheWelcome.vue'
+import Footer from './components/FooterSocial.vue'
+</script>
 
 <style scoped>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -75,7 +94,7 @@ body {
   color: #ffffff;
 }
 
-.content {
+.router-view {
   padding: 80px 20px 20px;
   background-image: url('/src/components/icons/fundoport.jpg');
   background-size: cover;
@@ -83,5 +102,14 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>
