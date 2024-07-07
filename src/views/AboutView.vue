@@ -40,6 +40,6 @@ p {
 }
 
 h2 {
-  color: #04aa6d;
+  color: #0b5ed7;
 }
 </style>

@@ -35,7 +35,7 @@
 }
 
 .education-content h3 {
-  color: #04aa6d;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -45,6 +45,6 @@
 }
 
 h2 {
-  color: #04aa6d;
+  color: #0b5ed7;
 }
 </style>

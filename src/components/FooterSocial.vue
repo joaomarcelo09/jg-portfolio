@@ -62,7 +62,6 @@ const socialLinks = [
   justify-content: center;
   text-decoration: none;
   color: #ffffff;
-  background-color: #04aa6d;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
