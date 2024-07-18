@@ -17,7 +17,14 @@
                 />
                 Repositório
               </a>
-              <a :href="project.githubLink" target="_blank" class="btn btn-primary"> Site </a>
+              <a
+                v-if="project.link"
+                :href="project.githubLink"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Site
+              </a>
             </div>
           </div>
         </div>
@@ -33,7 +40,8 @@ const projects = [
     description:
       'Otimização de serviços de academia como organização de fichas, registro de atletas e atribuições automáticas de fichas.',
     frameworks: 'Nest.js e Vue.js',
-    githubLink: 'https://github.com/joaomarcelo09/ficha-acad-api'
+    githubLink: 'https://github.com/joaomarcelo09/ficha-acad-api',
+    link: ''
   },
   {
     name: 'JG Banking',
