@@ -90,7 +90,7 @@ body {
 }
 
 .header a.router-link-exact-active {
-  background-color: #04aa6d;
+  background-color: #0b5ed7;
   color: #ffffff;
 }
 

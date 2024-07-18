@@ -5,13 +5,27 @@
       <div class="col-md-4 mb-4" v-for="project in projects" :key="project.name">
         <div class="card h-100">
           <div class="card-body">
-            <h3 class="card-title">{{ project.name }}</h3>
+            <h3 class="card-title text-primary">{{ project.name }}</h3>
             <p class="card-text">{{ project.description }}</p>
             <p class="card-text"><strong>Frameworks:</strong> {{ project.frameworks }}</p>
-            <a :href="project.githubLink" target="_blank" class="btn btn-primary">
-              <img src="../components/icons/githubicon.png" alt="GitHub Icon" class="github-icon" />
-              Clique para GitHub
-            </a>
+            <div class="group-btn">
+              <a :href="project.githubLink" target="_blank" class="btn btn-primary">
+                <img
+                  src="../components/icons/githubicon.png"
+                  alt="GitHub Icon"
+                  class="github-icon"
+                />
+                Repositório
+              </a>
+              <a
+                v-if="project.link"
+                :href="project.githubLink"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Site
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -26,7 +40,8 @@ const projects = [
     description:
       'Otimização de serviços de academia como organização de fichas, registro de atletas e atribuições automáticas de fichas.',
     frameworks: 'Nest.js e Vue.js',
-    githubLink: 'https://github.com/joaomarcelo09/ficha-acad-api'
+    githubLink: 'https://github.com/joaomarcelo09/ficha-acad-api',
+    link: ''
   },
   {
     name: 'JG Banking',
@@ -50,13 +65,18 @@ h1 {
   color: #ffffff;
 }
 
+.group-btn {
+  display: flex;
+  gap: 1rem;
+}
+
 .card {
   background-color: #333333;
   color: #ffffff;
 }
 
 .card-title {
-  color: #04aa6d;
+  color: #0b5ed7;
 }
 
 .card-text {

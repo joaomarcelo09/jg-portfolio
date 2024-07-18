@@ -40,7 +40,7 @@
 .timeline-item {
   margin-bottom: 1rem;
   padding: 0.75rem 1rem;
-  border-left: 0.25rem solid #04aa6d;
+  border-left: 0.25rem solid #0b5ed7;
   background-color: #555555;
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
@@ -49,7 +49,7 @@
 .timeline-content h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: #04aa6d;
+  color: #ffffff;
 }
 
 .timeline-content p {
@@ -61,6 +61,6 @@ p {
 }
 
 h2 {
-  color: #04aa6d;
+  color: #0b5ed7;
 }
 </style>
