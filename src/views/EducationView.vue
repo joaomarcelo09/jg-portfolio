@@ -1,25 +1,38 @@
 <template>
   <div class="section">
-    <div class="section-header">
-      <h2>Educação</h2>
-    </div>
     <div class="education-card">
       <div class="education-content">
-        <h3>Estácio de Sá</h3>
-        <p>Bacharelado em Análise e Desenvolvimento de Software, 2023 - 2025</p>
+        <h3 class="mb-4">Universidade Estácio de Sá</h3>
+        <div class="d-flex">
+          <p>
+            Estou cursando Análise e Desenvolvimento de Sistemas, acredito que o curso está sendo de
+            grande importância para a construção de uma base de conhecimento no que tange a área de
+            desenvolvimento. Tenho contato com uma gama de teorias que completam minha rotina diária
+            na programação.
+          </p>
+          <img src="/education.png" alt="Education Icon" class="icon-education" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="education-card">
+      <div class="education-content">
+        <h3 class="mb-5">Certificados de cursos:</h3>
+        <img src="/certificado.png" alt="Education Icon" class="icon-certificates" />
       </div>
     </div>
   </div>
 </template>
 
+<script setup>
+const certificates = ['/education.png']
+</script>
+
 <style scoped>
 .section {
   width: 100%;
-  max-width: 800px;
   padding: 1.5rem;
-  background-color: #333333;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .section-header {
@@ -27,24 +40,21 @@
   margin-bottom: 1rem;
 }
 
-.education-card {
-  padding: 1rem;
-  background-color: #555555;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+.icon-education {
+  width: 20rem;
+  margin-left: 0.5rem;
 }
 
-.education-content h3 {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
+.icon-certificates {
+  width: 60rem;
+}
+
+.education-card {
+  padding: 1rem;
 }
 
 .education-content p {
   margin: 0;
   color: #e0e0e0;
-}
-
-h2 {
-  color: #0b5ed7;
 }
 </style>

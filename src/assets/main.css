@@ -6,6 +6,18 @@
   width: 100%;
 }
 
+p {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

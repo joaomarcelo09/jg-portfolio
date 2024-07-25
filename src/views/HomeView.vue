@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import AboutView from './AboutView.vue'
+// import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import AditionalView from './AditionalView.vue'
 import EducationView from './EducationView.vue'
 </script>
 
 <template>
-  <div class="container">
-    <AboutView />
+  <div class="container mt-5">
+    <!-- <AboutView /> -->
     <ExperienceView />
     <AditionalView />
     <EducationView />

@@ -6,14 +6,19 @@
           <TheWelcome />
         </div>
         <div class="header-center">
-          <RouterLink to="/">Informações</RouterLink>
-          <RouterLink to="/projects">Projetos</RouterLink>
+          <RouterLink to="/">Projetos</RouterLink>
+          <RouterLink to="/experience">Experiência</RouterLink>
+          <RouterLink to="/aditional">Contribuições</RouterLink>
+          <RouterLink to="/education">Educação</RouterLink>
+          <RouterLink to="/about-me">Trajetória</RouterLink>
         </div>
         <div class="header-right"></div>
       </div>
 
       <div class="router-view">
-        <RouterView />
+        <div class="container mt-5">
+          <RouterView />
+        </div>
       </div>
       <Footer />
     </div>
@@ -41,7 +46,7 @@ body {
 .main-content {
   flex: 1;
   overflow-y: auto;
-  padding-bottom: 80px;
+  padding-bottom: 4rem;
   box-sizing: border-box;
 }
 
@@ -97,7 +102,7 @@ body {
 .router-view {
   padding: 80px 20px 20px;
   margin-bottom: 30px;
-  background-image: url('/src/components/icons/fundoport.jpg');
+  background-color: #033177;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
