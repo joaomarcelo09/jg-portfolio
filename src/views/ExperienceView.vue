@@ -1,17 +1,20 @@
 <template>
-  <div class="section">
-    <div class="section-header">
-      <h2>Experiência Profissional</h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>01/2023 - 02/2024</h3>
-          <p>
-            Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js,
-            Pinia, Bootstrap, TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma. Papel
-            crucial no desenvolvimento do front-end e back-end, utilizando Scrum e práticas DevOps.
-          </p>
+  <div class="container mt-5">
+    <div class="section">
+      <div class="section-header">
+        <h2>Experiência Profissional</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>01/2023 - 02/2024</h3>
+            <p>
+              Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js,
+              Pinia, Bootstrap, TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma.
+              Papel crucial no desenvolvimento do front-end e back-end, utilizando Scrum e práticas
+              DevOps.
+            </p>
+          </div>
         </div>
       </div>
     </div>

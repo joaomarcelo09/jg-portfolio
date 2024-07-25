@@ -6,7 +6,7 @@ import EducationView from './EducationView.vue'
 </script>
 
 <template>
-  <div class="container">
+  <div class="container mt-5">
     <AboutView />
     <ExperienceView />
     <AditionalView />
