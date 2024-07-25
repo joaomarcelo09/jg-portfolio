@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio-header">
     <h3 class="portfolio-title">João Gomes</h3>
+    <img src="/java-icon.png" alt="Java Icon" class="icon-tec" />
   </div>
 </template>
 
@@ -10,6 +11,12 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.icon-tec {
+  width: 30px;
+  margin-left: 0.5rem;
+  border-radius: 8px;
 }
 
 .portfolio-title {

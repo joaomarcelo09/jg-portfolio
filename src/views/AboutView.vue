@@ -35,10 +35,6 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
-p {
-  color: #ffffff;
-}
-
 h2 {
   color: #0b5ed7;
 }
