@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AboutView from './AboutView.vue'
+// import AboutView from './AboutView.vue'
 import ExperienceView from './ExperienceView.vue'
 import AditionalView from './AditionalView.vue'
 import EducationView from './EducationView.vue'
@@ -7,7 +7,7 @@ import EducationView from './EducationView.vue'
 
 <template>
   <div class="container mt-5">
-    <AboutView />
+    <!-- <AboutView /> -->
     <ExperienceView />
     <AditionalView />
     <EducationView />

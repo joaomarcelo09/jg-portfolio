@@ -1,16 +1,14 @@
 <template>
-  <div class="container mt-5">
-    <div class="section" v-for="exp in experiencies" :key="exp.date">
-      <div class="section-header d-flex justify-content-evenly">
-        <h3>{{ exp.company }}</h3>
-        <h3>{{ exp.date_init }} até {{ exp.date_end }}</h3>
-      </div>
-      <div class="timeline" v-for="section in exp.sections" :key="section.title">
-        <div class="timeline-item">
-          <h5 class="mt-2">{{ section.title }}</h5>
-          <div class="timeline-content mt-4">
-            <p>{{ section.description }}</p>
-          </div>
+  <div class="section" v-for="exp in experiencies" :key="exp.date">
+    <div class="section-header d-flex justify-content-evenly">
+      <h3>{{ exp.company }}</h3>
+      <h3>{{ exp.date_init }} até {{ exp.date_end }}</h3>
+    </div>
+    <div class="timeline" v-for="section in exp.sections" :key="section.title">
+      <div class="timeline-item">
+        <h5 class="mt-2">{{ section.title }}</h5>
+        <div class="timeline-content mt-4">
+          <p>{{ section.description }}</p>
         </div>
       </div>
     </div>

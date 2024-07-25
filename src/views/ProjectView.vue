@@ -1,36 +1,30 @@
 <template>
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">Projetos</h1>
-    <div class="row">
-      <div class="col-md-4 mb-4" v-for="project in projects" :key="project.name">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.name }}</h3>
-            <p class="card-text">{{ project.description }}</p>
-            <div class="card-text d-flex">
-              <strong>Tecnologia(s):</strong>
-              <div v-for="frame in project.frameworks" :key="frame">
-                <img :src="frame" alt="Tecnology Icon" class="icon-tec" />
-              </div>
+  <h1 class="text-center mb-4">Projetos</h1>
+  <div class="row">
+    <div class="col-md-4 mb-4" v-for="project in projects" :key="project.name">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">{{ project.name }}</h3>
+          <p class="card-text">{{ project.description }}</p>
+          <div class="card-text d-flex">
+            <strong>Tecnologia(s):</strong>
+            <div v-for="frame in project.frameworks" :key="frame">
+              <img :src="frame" alt="Tecnology Icon" class="icon-tec" />
             </div>
-            <div class="group-btn mt-3">
-              <a :href="project.githubLink" target="_blank" class="btn btn-primary">
-                <img
-                  src="../components/icons/githubicon.png"
-                  alt="GitHub Icon"
-                  class="github-icon"
-                />
-                Repositório
-              </a>
-              <a
-                v-if="project.link"
-                :href="project.githubLink"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                Site
-              </a>
-            </div>
+          </div>
+          <div class="group-btn mt-3">
+            <a :href="project.githubLink" target="_blank" class="btn btn-primary">
+              <img src="../components/icons/githubicon.png" alt="GitHub Icon" class="github-icon" />
+              Repositório
+            </a>
+            <a
+              v-if="project.link"
+              :href="project.githubLink"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Site
+            </a>
           </div>
         </div>
       </div>
@@ -59,6 +53,20 @@ const projects = [
     name: 'To Do List',
     description:
       'Criação de uma ferramenta de organização de tarefas para melhorar a produtividade diária, permitindo o compartilhamento de tarefas com outros usuários.',
+    frameworks: ['spring-boot-icon.png'],
+    githubLink: 'https://github.com/joaomarcelo09/to-do-list-java'
+  },
+  {
+    name: 'Unintegra',
+    description:
+      'Uma plataforma projetada para unir pessoas em projetos colaborativos quer de aprendizado, quer para serem reconhecidos mundialmente.',
+    frameworks: ['/nest-js-icon.png'],
+    githubLink: 'https://github.com/unintegra/backend'
+  },
+  {
+    name: 'Stock',
+    description:
+      'Sistema que visa a gestão da logística dos produtos de lojas, otimizando o serviço de organização e controlando melhor os dados.',
     frameworks: ['spring-boot-icon.png'],
     githubLink: 'https://github.com/joaomarcelo09/to-do-list-java'
   }

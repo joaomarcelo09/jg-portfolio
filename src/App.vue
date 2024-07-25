@@ -10,13 +10,15 @@
           <RouterLink to="/experience">Experiência</RouterLink>
           <RouterLink to="/aditional">Contribuições</RouterLink>
           <RouterLink to="/education">Educação</RouterLink>
-          <RouterLink to="/about-me">Sobre mim</RouterLink>
+          <RouterLink to="/about-me">Trajetória</RouterLink>
         </div>
         <div class="header-right"></div>
       </div>
 
       <div class="router-view">
-        <RouterView />
+        <div class="container mt-5">
+          <RouterView />
+        </div>
       </div>
       <Footer />
     </div>

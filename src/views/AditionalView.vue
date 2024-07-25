@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5 d-flex" v-for="adit in aditionals" :key="adit.title">
+  <div class="d-flex" v-for="adit in aditionals" :key="adit.title">
     <img v-if="adit.image_left" :src="adit.image_left" alt="Tecnology Icon" class="icon-tec" />
 
     <div class="section">
