@@ -11,11 +11,10 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6">
-          <h4>Contato</h4>
+        <div class="col-md-6 d-flex">
           <a href="mailto:jg0112360@gmail.com" target="_blank" class="btn btn-primary">
-            <!-- <img src="./icons/wppicon.png" alt="WhatsApp" /> -->
-            Converse diretamente comigo
+            <img src="/gmail.png" alt="WhatsApp" />
+            Contate-me
           </a>
         </div>
       </div>

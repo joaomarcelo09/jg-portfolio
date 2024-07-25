@@ -44,7 +44,7 @@ body {
 .main-content {
   flex: 1;
   overflow-y: auto;
-  padding-bottom: 80px;
+  padding-bottom: 4rem;
   box-sizing: border-box;
 }
 

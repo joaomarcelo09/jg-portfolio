@@ -1,19 +1,15 @@
 <template>
   <div class="container mt-5">
-    <div class="section">
-      <div class="section-header">
-        <h2>Experiência Profissional</h2>
+    <div class="section" v-for="exp in experiencies" :key="exp.date">
+      <div class="section-header d-flex justify-content-evenly">
+        <h3>{{ exp.company }}</h3>
+        <h3>{{ exp.date_init }} até {{ exp.date_end }}</h3>
       </div>
-      <div class="timeline">
+      <div class="timeline" v-for="section in exp.sections" :key="section.title">
         <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>01/2023 - 02/2024</h3>
-            <p>
-              Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js,
-              Pinia, Bootstrap, TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma.
-              Papel crucial no desenvolvimento do front-end e back-end, utilizando Scrum e práticas
-              DevOps.
-            </p>
+          <h5 class="mt-2">{{ section.title }}</h5>
+          <div class="timeline-content mt-4">
+            <p>{{ section.description }}</p>
           </div>
         </div>
       </div>
@@ -21,14 +17,54 @@
   </div>
 </template>
 
+<script setup>
+const experiencies = [
+  {
+    company: 'Agência Novi',
+    date_init: '01/2023',
+    date_end: '02/2024',
+    sections: [
+      {
+        title: 'Chegando como estágio',
+        description: `Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js, Pinia, Bootstrap, 
+        TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma. Papel crucial no desenvolvimento do front-end e back-end, 
+        utilizando Scrum e práticas DevOps.`
+      },
+      {
+        title: 'Após o período de estágio',
+        description: `Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js, Pinia, Bootstrap, 
+        TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma. Papel crucial no desenvolvimento do front-end e back-end, 
+        utilizando Scrum e práticas DevOps.`
+      },
+      {
+        title: 'Responsável pelo back-end de um projeto',
+        description: `Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js, Pinia, Bootstrap, 
+        TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma. Papel crucial no desenvolvimento do front-end e back-end, 
+        utilizando Scrum e práticas DevOps.`
+      }
+    ]
+  },
+  {
+    company: 'Freelancer',
+    date_init: '02/2024',
+    date_end: 'o momento atual',
+    sections: [
+      {
+        title: 'Fazendo projetos próprios',
+        description: `Desenvolvedor Full Stack na Agência Novi, trabalhando em projetos variados com Vue.js, Pinia, Bootstrap, 
+        TypeScript, JavaScript, Node.js com Express, Sequelize e Prisma. Papel crucial no desenvolvimento do front-end e back-end, 
+        utilizando Scrum e práticas DevOps.`
+      }
+    ]
+  }
+]
+</script>
+
 <style scoped>
 .section {
   width: 100%;
-  max-width: 800px;
   padding: 1.5rem;
-  background-color: #333333;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid;
 }
 
 .section-header {
@@ -63,7 +99,8 @@ p {
   color: #ffffff;
 }
 
-h2 {
-  color: #0b5ed7;
+h3,
+h5 {
+  color: #ffffff;
 }
 </style>
