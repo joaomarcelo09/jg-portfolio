@@ -7,10 +7,10 @@
         </div>
         <div class="header-center">
           <RouterLink to="/">Projetos</RouterLink>
-          <RouterLink to="/experience">Experiência</RouterLink>
           <RouterLink to="/aditional">Contribuições</RouterLink>
+          <RouterLink to="/experience">Experiência</RouterLink>
           <RouterLink to="/education">Educação</RouterLink>
-          <RouterLink to="/about-me">Trajetória</RouterLink>
+          <RouterLink to="/about-me">Sobre mim</RouterLink>
         </div>
         <div class="header-right"></div>
       </div>

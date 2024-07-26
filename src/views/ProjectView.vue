@@ -4,7 +4,11 @@
     <div class="col-md-4 mb-4" v-for="project in projects" :key="project.name">
       <div class="card h-100">
         <div class="card-body">
-          <h3 class="card-title">{{ project.name }}</h3>
+          <div class="d-flex card-title justify-content-between">
+            <h3>{{ project.name }}</h3>
+            <img v-if="project.icon" :src="project.icon" alt="Title Icon" class="title-icon" />
+          </div>
+
           <p class="card-text">{{ project.description }}</p>
           <div class="card-text d-flex">
             <strong>Tecnologia(s):</strong>
@@ -14,7 +18,7 @@
           </div>
           <div class="group-btn mt-3">
             <a :href="project.githubLink" target="_blank" class="btn btn-primary">
-              <img src="../components/icons/githubicon.png" alt="GitHub Icon" class="github-icon" />
+              <img src="/githubicon.png" alt="GitHub Icon" class="github-icon" />
               Repositório
             </a>
             <a
@@ -36,6 +40,7 @@
 const projects = [
   {
     name: 'Ficha Academia',
+    icon: '/magic-hat.png',
     description:
       'Otimização de serviços de academia como organização de fichas, registro de atletas e atribuições automáticas de fichas.',
     frameworks: ['/nest-js-icon.png', '/vueIcon.png'],
@@ -51,6 +56,8 @@ const projects = [
   },
   {
     name: 'To Do List',
+    icon: '/magic-hat.png',
+
     description:
       'Criação de uma ferramenta de organização de tarefas para melhorar a produtividade diária, permitindo o compartilhamento de tarefas com outros usuários.',
     frameworks: ['spring-boot-icon.png'],
@@ -76,6 +83,12 @@ const projects = [
 <style scoped>
 h1 {
   color: #ffffff;
+}
+
+.title-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
 }
 
 .group-btn {
