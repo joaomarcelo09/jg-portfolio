@@ -43,7 +43,7 @@ const contacts = [
   },
   {
     icon: '/gmail.png',
-    link: 'https://www.linkedin.com/in/joao-marcelo-a31b75206/'
+    link: 'mailto:jg0112360@gmail.com'
   }
 ]
 const about_me = [
