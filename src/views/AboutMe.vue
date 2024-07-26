@@ -1,16 +1,51 @@
 <template>
-  <div class="section">
-    <div class="d-flex" v-for="about in about_me" :key="about.title">
-      <div class="card mt-4">
-        <h2 class="mb-4">{{ about.title }}</h2>
-        <p v-for="desc in about.description" :key="desc">{{ desc }}</p>
+  <div>
+    <div class="section">
+      <div class="d-flex">
+        <div class="mt-4">
+          <h3 class="mb-3">Informações</h3>
+          <p>
+            Meu nome é João Gomes, 21 anos. <br />
+            Atualmente moro no Rio de Janeiro. <br />
+            Me aventuro em computação desde os 10 anos. <br />
+          </p>
+          <h3 class="mb-3 mt-5">Entre em contato pelo linkedin ou pelo email</h3>
+          <div class="d-flex">
+            <div v-for="cont in contacts" :key="cont.link">
+              <a :href="cont.link" target="_blank">
+                <img :src="cont.icon" alt="Contact Icon" class="icon-contact" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img v-if="about.image" :src="about.image" alt="Education Icon" class="icon-mine" />
+    </div>
+  </div>
+  <div class="mt-5">
+    <h2 class="text-center">Trajetória</h2>
+    <div class="section">
+      <div class="d-flex" v-for="about in about_me" :key="about.title">
+        <div class="mt-4">
+          <h3 class="mb-5">{{ about.title }}</h3>
+          <p v-for="desc in about.description" :key="desc">{{ desc }}</p>
+        </div>
+        <img v-if="about.image" :src="about.image" alt="Education Icon" class="icon-mine" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
+const contacts = [
+  {
+    icon: '/linkedin.png',
+    link: 'https://www.linkedin.com/in/joao-marcelo-a31b75206/'
+  },
+  {
+    icon: '/gmail.png',
+    link: 'https://www.linkedin.com/in/joao-marcelo-a31b75206/'
+  }
+]
 const about_me = [
   {
     title: 'Aos 12 anos, programando plugins de servidor...',
@@ -42,14 +77,19 @@ const about_me = [
 </script>
 
 <style scoped>
+a:hover {
+  background-color: transparent !important;
+}
+
 .section {
   width: 100%;
   padding: 2rem;
-  background-color: #333333;
-  background-image: url('/fundomine.png');
+  border-top: 3px solid;
+}
 
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+.icon-contact {
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .icon-mine {
@@ -58,12 +98,5 @@ const about_me = [
 
 .section-header {
   margin-bottom: 1rem;
-}
-
-.card {
-  padding: 1rem;
-  background-color: #444444;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 </style>

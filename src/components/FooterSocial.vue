@@ -6,16 +6,9 @@
           <h4>Redes Sociais</h4>
           <div class="social-icons">
             <a v-for="social in socialLinks" :key="social.name" :href="social.link" target="_blank">
-              <!-- <img :src="social.icon" :alt="social.name" /> -->
-              {{ social.name }}
+              <img :src="social.icon" :alt="social.name" />
             </a>
           </div>
-        </div>
-        <div class="col-md-6 d-flex">
-          <a href="mailto:jg0112360@gmail.com" target="_blank" class="btn btn-primary">
-            <img src="/gmail.png" alt="WhatsApp" />
-            Contate-me
-          </a>
         </div>
       </div>
     </div>
@@ -26,12 +19,12 @@
 const socialLinks = [
   {
     name: 'GitHub',
-    icon: `"icons/githubicon.png"`,
+    icon: `/githubicon.png`,
     link: 'https://github.com/joaomarcelo09'
   },
   {
     name: 'LinkedIn',
-    icon: 'icons/githubicon.png',
+    icon: '/linkedin.png',
     link: 'https://www.linkedin.com/in/joao-marcelo-a31b75206/'
   }
 ]
