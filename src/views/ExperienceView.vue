@@ -48,19 +48,6 @@ const experiencies = [
         eram dois programadores no back-end entretanto meu colega de trabalho foi redirecionado para outro projeto, fazendo com que eu ficasse responsável pelo back-end do projeto.`
       }
     ]
-  },
-  {
-    company: 'Freelancer',
-    date_init: '02/2024',
-    date_end: 'o momento atual',
-    sections: [
-      {
-        title: 'Fazendo projetos próprios',
-        description: `Acabei sofrendo um lay-off na empresa, então em busca de voltar ao mercado de trabalho comecei a fazer projetos próprios
-        primeiramente apenas para aprendizagem porém alguns tinham ideias que realmente poderiam ser vendidas, trabalhando em projetos sozinho me deu uma ampla experiência sobre criação
-        de base-code, gestão de tarefas, perspectiva, análise e desenvolvimento de regras de negócio.`
-      }
-    ]
   }
 ]
 </script>
