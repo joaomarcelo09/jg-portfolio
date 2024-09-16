@@ -40,14 +40,6 @@ const aditionals = [
       `Entrei nesse projeto com o intuito de poder focar mais em fazer tarefas como desenvolvedor e não precisar pensar tanto
        em outros aspectos como gestão do projeto, por isso optei por entrar num projeto fora do BitWizards.`
     ]
-  },
-  {
-    title: 'Stock',
-    image_right: '/stock.png',
-    description: [
-      `Outro projeto comunitário que eu entrei apenas sendo desenvolvedor back-end, porém entrei nesse projeto pois o framework utilizado
-      é o spring boot, então para ampliar meus conhecimentos práticos em JAVA faço parte da equipe em que desenvolve esse projeto.`
-    ]
   }
 ]
 </script>

@@ -69,13 +69,6 @@ const projects = [
       'Uma plataforma projetada para unir pessoas em projetos colaborativos quer de aprendizado, quer para serem reconhecidos mundialmente.',
     frameworks: ['/nest-js-icon.png'],
     githubLink: 'https://github.com/unintegra/backend'
-  },
-  {
-    name: 'Stock',
-    description:
-      'Sistema que visa a gestão da logística dos produtos de lojas, otimizando o serviço de organização e controlando melhor os dados.',
-    frameworks: ['spring-boot-icon.png'],
-    githubLink: 'https://github.com/joaomarcelo09/to-do-list-java'
   }
 ]
 </script>
