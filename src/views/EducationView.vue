@@ -15,14 +15,14 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <!-- <div class="section">
     <div class="education-card">
       <div class="education-content">
         <h3 class="mb-5">Certificados de cursos:</h3>
         <img src="/certificado.png" alt="Education Icon" class="icon-certificates" />
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup>

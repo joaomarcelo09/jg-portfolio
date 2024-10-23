@@ -7,8 +7,8 @@
         </div>
         <div class="header-center">
           <RouterLink to="/">Projetos</RouterLink>
-          <RouterLink to="/aditional">Contribuições</RouterLink>
           <RouterLink to="/experience">Experiência</RouterLink>
+          <RouterLink to="/aditional">Contribuições</RouterLink>
           <RouterLink to="/education">Educação</RouterLink>
           <RouterLink to="/about-me">Sobre mim</RouterLink>
         </div>
