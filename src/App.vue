@@ -6,11 +6,9 @@
           <TheWelcome />
         </div>
         <div class="header-center">
-          <RouterLink to="/">Projetos</RouterLink>
-          <RouterLink to="/aditional">Contribuições</RouterLink>
-          <RouterLink to="/experience">Experiência</RouterLink>
-          <RouterLink to="/education">Educação</RouterLink>
-          <RouterLink to="/about-me">Sobre mim</RouterLink>
+          <RouterLink v-for="route in rout.options.routes" :key="route.name" :to="route.path">{{
+            route.name
+          }}</RouterLink>
         </div>
         <div class="header-right"></div>
       </div>
@@ -29,6 +27,9 @@
 import { RouterLink, RouterView } from 'vue-router'
 import TheWelcome from './components/TheWelcome.vue'
 import Footer from './components/FooterSocial.vue'
+import { useRouter } from 'vue-router'
+
+const rout = useRouter()
 </script>
 
 <style scoped>
@@ -46,7 +47,7 @@ body {
 .main-content {
   flex: 1;
   overflow-y: auto;
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
   box-sizing: border-box;
 }
 

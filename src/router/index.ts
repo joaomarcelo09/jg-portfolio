@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import SkillsView from '@/views/SkillsView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import AboutMe from '@/views/AboutMe.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
@@ -11,33 +12,33 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'project',
+      name: 'Projetos',
       component: ProjectView
     },
     {
-      path: '/about-me',
-      name: 'about',
-      component: AboutMe
-    },
-    {
       path: '/experience',
-      name: 'experience',
+      name: 'Experiência',
       component: ExperienceView
     },
     {
+      path: '/skills',
+      name: 'Habilidades',
+      component: SkillsView
+    },
+    {
       path: '/aditional',
-      name: 'aditional',
+      name: 'Contribuições',
       component: AditionalView
     },
     {
       path: '/education',
-      name: 'education',
+      name: 'Educação',
       component: EducationView
     },
     {
-      path: '/projects',
-      name: 'home',
-      component: HomeView
+      path: '/about-me',
+      name: 'Sobre mim',
+      component: AboutMe
     }
   ]
 })
