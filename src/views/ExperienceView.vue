@@ -4,12 +4,13 @@
     <div class="timeline-item">
       <div class="section">
         <div class="section-header d-flex justify-content-start">
-          <h3>Na {{ exp.company }}:</h3>
+          <h3 v-if="exp.date_end">Na {{ exp.company }}:</h3>
+          <h3 v-if="!exp.date_end">Atualmente na {{ exp.company }}:</h3>
         </div>
         <h5 class="mt-4" v-for="section in exp.responsibilities" :key="section">- {{ section }}</h5>
       </div>
     </div>
-    <h3>-> {{ exp.date_end }}</h3>
+    <h3 v-if="exp.date_end">-> {{ exp.date_end }}</h3>
   </div>
   <h3 class="mt-3">Presente</h3>
 </template>

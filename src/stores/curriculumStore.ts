@@ -23,6 +23,15 @@ export const useCurriculumStore = defineStore('cvStore', {
           'Atuei na implementação de autenticação e controle de acesso em diversas aplicações.',
           'Coordenei com equipes de front-end utilizando Vue.js e Pinia para garantir a integração fluida entre camadas.'
         ]
+      },
+      {
+        company: 'ISDB Flowtech',
+        role: 'Estagiário em desenvolvimento de software',
+        date_init: '11/2024',
+        responsibilities: [
+          'Desenvolvo em Java no backend das aplicações e javascript/jquery/css/html no frontend',
+          'Utilizo docker para containerizaçao da aplicação.',
+        ]
       }
     ],
     projects: [
