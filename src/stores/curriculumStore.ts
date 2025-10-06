@@ -29,8 +29,10 @@ export const useCurriculumStore = defineStore('cvStore', {
         role: 'Estagiário em desenvolvimento de software',
         date_init: '11/2024',
         responsibilities: [
-          'Desenvolvo em Java no backend das aplicações e javascript/jquery/css/html no frontend',
-          'Utilizo docker para containerizaçao da aplicação.',
+          'Desenvolvo em java e python no backend das aplicações utilizando frameworks como django, fast api e spring boot',
+          'Utilizo javascript, jquery, css, html, typescript no frontend, com o typescript sendo utilizado no framework Next js',
+          'Utilizo docker para desenvolvimento em ambientes complexos com estruturas com frontend, backend, bancos de dados, sistemas de filas, utilizando o docker compose e docker file para composição desse ambiente.',
+          'Utilizo bancos locais podendo ser em memória como o sqlite ou podendo utilizar uma imagem docker por exemplo o postgres sendo iniciado pelo docker compose',
         ]
       }
     ],
